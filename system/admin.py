@@ -20,6 +20,7 @@ class LessonAdmin(admin.ModelAdmin):
 class UserAdmin(admin.ModelAdmin):
 	list_display = ('first_name', 'last_name', 'email')
 	list_display_links = ('first_name', 'last_name', 'email')
+	list_filter = ('products',)
 
 
 @admin.register(Group)
